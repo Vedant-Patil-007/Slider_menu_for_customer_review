@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider Menu</title>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>
+            Customer review
+        </h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="IMG/pic4.jpg" alt="Image not found">
+                        <div>
+                            <h3>Vedant Patil</h3>
+
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+
+                    <p>Veadnt is a full-service web design and Developer. I help you maximize your business potential with a site that’s fast, responsive, 100% mobile-ready and secure. We’ll even show you how easy it is to update. Developing custom sites is our sweet spot, but if you’re looking for us to modify a template professionally, I can do that too. Plus, ask us about Google Ads, website maintenance, landing page development and SEO.</p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="IMG/pic2.jpg" alt="Image not found">
+                        <div>
+                            <h3>Piyush Patil</h3>
+
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+
+                    <p>A Web Developer is a professional who is responsible for the design and construction of websites.
+                        They ensure that sites meet user expectations by ensuring they look good, run smoothly and offer
+                        easy access points with no loading issues between pages or error messages.</p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="IMG/pic5.png" alt="Image not found">
+                        <div>
+                            <h3>Shubham Nikumbh</h3>
+
+                            <p>FrontEnd Developer</p>
+                        </div>
+                    </div>
+
+                    <p>A Web Developer is a professional who is responsible for the design and construction of websites.
+                        They ensure that sites meet user expectations by ensuring they look good, run smoothly and offer
+                        easy access points with no loading issues between pages or error messages.</p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="IMG/pic8.jpg" alt="Image not found">
+                        <div>
+                            <h3>Sarang Patil</h3>
+
+                            <p>Backend Developer</p>
+                        </div>
+                    </div>
+
+                    <p>A Web Developer is a professional who is responsible for the design and construction of websites.
+                        They ensure that sites meet user expectations by ensuring they look good, run smoothly and offer
+                        easy access points with no loading issues between pages or error messages.</p>
+                </div>
+
+
+            </div>
+
+            <div class="sidebar" >
+                <img src="IMG/up-arrow.png" alt="Image NOt Found" id="uparrow" >
+                <img src="IMG/down-arrow.png" alt="Image Not Found" id="downarrow" >
+            </div>
+
+        </div>
+    </div>
+
+
+<script>
+    var slide =document.getElementById("slide");
+    var uparrow =document.getElementById("uparrow");
+    var downarrow =document.getElementById("downarrow");
+
+    let x=0;
+
+    uparrow.onclick=function(){
+        if(x > "-900"){
+            x=x-300;
+        slide.style.top = x +"px";
+        }
+    }
+    downarrow.onclick=function(){
+        if(x < 0){
+            x=x+300;
+        slide.style.top = x +"px";
+         } 
+          
+    }
+</script>
+
+</body>
+
+</html>
